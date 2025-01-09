@@ -152,5 +152,39 @@ body {
     .apresentacao__conteudo{
         width: 100%;
     }
-    
+
+    .apresentacao__links {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .apresentacao__links__navegacao {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        max-width: 300px;
+        text-align: center;
+        padding: 15px;
+        border: 2px solid var(--cor-terciaria);
+        border-radius: 8px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--cor-secundaria);
+        font-family: var(--fonte-secundaria);
+        text-decoration: none;
+        gap: 10px;
+    }
+    .apresentacao__links__navegacao img {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .apresentacao__links__navegacao {
+        width: 90%;
+        font-size: 1rem;
+    }
 }
