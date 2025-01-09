@@ -38,3 +38,7 @@ Feel free to reach out:
 - 💼 LinkedIn: [Felipe Zerbinati LinkedIn](https://www.linkedin.com/in/felipe-zerbinati-5aa8a9279/)
 - 🐙 GitHub: [Felipe Zerbinati GitHub](https://github.com/FelipeZerbinati)
 - 📷 Instagram: [Felipe Zerbinati Instagram](https://www.instagram.com/_flpcoelho/)
+
+---
+
+Developed by Felipe Zerbinati.
