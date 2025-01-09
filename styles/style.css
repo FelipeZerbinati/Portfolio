@@ -153,6 +153,11 @@ body {
         width: 100%;
     }
 
+    .apresentacao__imagem {
+        width: 60%;
+        max-width: 25rem;
+    }
+
     .apresentacao__links {
         width: 100%;
         display: flex;
