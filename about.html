@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">About me</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="switch-language">
+            <button id="switch-language">English/Português</button>
+        </div>
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link", id="aboutMe" href="about.html">About me</a>
+        </nav>
+    </header>
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <h1 class="apresentacao__conteudo__titulo", id="h1">About me</h1>
+            <p class="apresentacao__conteudo__texto">I am a passionate Software Development student with a background in Electronics, eager to expand my knowledge and gain practical experience in the field. I thrive on continuous learning, always seeking new ways to grow my skills and stay up to date with the latest technologies.</p>
+            <p class="apresentacao__conteudo__texto">With a problem-solving mindset and a proactive attitude, I enjoy tackling complex challenges, collaborating on projects, and contributing meaningfully to any team. My ability to understand and connect with people through empathy allows me to communicate effectively and work well in diverse environments.
+            </p>
+            <p class="apresentacao__conteudo__texto">
+                I believe in self-improvement, adaptability, and lifelong learning, and I am always open to new opportunities that will help me evolve as a developer and professional.            
+            </p>
+            <p class="apresentacao__conteudo__texto">
+                Let's connect and build something great together! 🚀
+            </p>
+        </section>
+        <img class="apresentacao__imagem", src="./images/portfolio image computer.png" alt="foto do felipe programando">
+    </main>
+    <footer class="rodape">
+        <p id="footer">Developed by Felipe Zerbinati.</p>
+    </footer>
+    
+
+    <script>
+        document.getElementById('switch-language').addEventListener('click', function() {
+            const titulo = document.getElementById('title');
+            const h1 = document.getElementById('h1');
+            const footer = document.getElementById('footer');
+            const aboutMe = document.getElementById('aboutMe');
+            const paragraphs = document.querySelectorAll('.apresentacao__conteudo__texto');
+    
+            if (titulo.innerHTML.includes('About me')) {
+                titulo.innerHTML = 'Sobre mim';
+                aboutMe.innerHTML = 'Sobre mim';
+                h1.innerHTML = 'Sobre mim';
+                footer.innerHTML = 'Desenvolvido por Felipe Zerbinati';
+                paragraphs[0].innerHTML = 'Sou um estudante apaixonado por Desenvolvimento de Software com formação em Eletrônica, ansioso para expandir meu conhecimento e ganhar experiência prática na área. Gosto de aprendizado contínuo, sempre buscando novas maneiras de desenvolver minhas habilidades e me manter atualizado com as últimas tecnologias.';
+                paragraphs[1].innerHTML = 'Com uma mentalidade focada na resolução de problemas e uma atitude proativa, gosto de enfrentar desafios complexos, colaborar em projetos e contribuir de maneira significativa para qualquer equipe. Minha capacidade de compreender e me conectar com as pessoas por meio da empatia me permite me comunicar de forma eficaz e trabalhar bem em ambientes diversos.';
+                paragraphs[2].innerHTML = 'Acredito no aprimoramento contínuo, na adaptabilidade e no aprendizado ao longo da vida, e estou sempre aberto a novas oportunidades que me ajudem a evoluir como desenvolvedor e profissional.';
+                paragraphs[3].innerHTML = 'Vamos nos conectar e construir algo incrível juntos! 🚀';
+            } else {
+                titulo.innerHTML = 'About me';
+                h1.innerHTML = 'About me';
+                aboutMe.innerHTML = 'About me';
+                footer.innerHTML = 'Developed by Felipe Zerbinati';
+                paragraphs[0].innerHTML = 'I am a passionate Software Development student with a background in Electronics, eager to expand my knowledge and gain practical experience in the field. I thrive on continuous learning, always seeking new ways to grow my skills and stay up to date with the latest technologies.';
+                paragraphs[1].innerHTML = 'With a problem-solving mindset and a proactive attitude, I enjoy tackling complex challenges, collaborating on projects, and contributing meaningfully to any team. My ability to understand and connect with people through empathy allows me to communicate effectively and work well in diverse environments.';
+                paragraphs[2].innerHTML = 'I believe in self-improvement, adaptability, and lifelong learning, and I am always open to new opportunities that will help me evolve as a developer and professional.';
+                paragraphs[3].innerHTML = 'Let\'s connect and build something great together! 🚀';
+            }
+        });
+    </script>
+    
+</body>
+</html>

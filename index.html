@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link", id="aboutMe" href="about.html">About me</a>
+        </nav>
+        <div class="switch-language">
+            <button id="switch-language">English/Português</button>
+        </div>
+    </header>
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <h1 class="apresentacao__conteudo__titulo" id="titulo">
+                Problem solver eager to collaborate, learn, and <strong class="titulo-destaque">create impactful solutions!</strong>
+            </h1>
+            <p class="apresentacao__conteudo__texto" id="descricao">
+                Hello! I'm Felipe Zerbinati, a beginner software developer with a basis on <strong>Python, C#, Java and Web Development with HTML5 and CSS3.</strong>
+            </p>
+            <div class="apresentacao__links">
+                <h2 class="apresentacao__links__subtitulo", id="contato">Contact me on: </h2>
+                <a class="apresentacao__links__navegacao" href="https://www.linkedin.com/in/felipe-zerbinati-5aa8a9279/">
+                    <img src="images/linkedin.png">
+                    LinkedIn</a>
+
+                <a class="apresentacao__links__navegacao" href="https://github.com/FelipeZerbinati">
+                    <img src="images/github.png">
+                    GitHub
+                </a>
+
+                <a class="apresentacao__links__navegacao" href="https://www.instagram.com/_flpcoelho/">
+                    <img src="images/instagram.png">
+                    Instagram
+                </a>
+                
+            </div>
+        </section>
+        <img class="apresentacao__imagem", src="images/portfolio image computer.png" alt="foto do felipe programando">
+    </main>
+    <footer class="rodape">
+        <p id="footer">Developed by Felipe Zerbinati.</p>
+    </footer>
+    
+    <script>
+        document.getElementById('switch-language').addEventListener('click', function() {
+            const titulo = document.getElementById('titulo');
+            const descricao = document.getElementById('descricao');
+            const contato = document.getElementById('contato');
+            const footer = document.getElementById('footer');
+            const sobremim = document.getElementById('aboutMe');
+            
+            if (titulo.innerHTML.includes('Problem solver')) {
+                titulo.innerHTML = 'Resolutor de problemas ansioso para colaborar, aprender e <strong class="titulo-destaque">criar soluções impactantes!</strong>';
+                descricao.innerHTML = 'Olá! Eu sou Felipe Zerbinati, um desenvolvedor de software iniciante com conhecimentos em <strong>Python, C#, Java e Desenvolvimento Web com HTML5 e CSS3.</strong>';
+                contato.innerHTML = 'Acesse minhas redes:';
+                footer.innerHTML = 'Desenvolvido por Felipe Zerbinati.';
+                sobremim.innerHTML = 'Sobre mim';
+            } else {
+                titulo.innerHTML = 'Problem solver eager to collaborate, learn, and <strong class="titulo-destaque">create impactful solutions!</strong>';
+                descricao.innerHTML = "Hello! I'm Felipe Zerbinati, a beginner software developer with a basis on <strong>Python, C#, Java and Web Development with HTML5 and CSS3.</strong>";
+                contato.innerHTML = 'Contact me on:';
+                footer.innerHTML = 'Developed by Felipe Zerbinati.';
+                sobremim.innerHTML = 'About me';
+            }
+        });
+    </script>
+</body>
+</html>
